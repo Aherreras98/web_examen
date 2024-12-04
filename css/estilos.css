@@ -116,6 +116,7 @@ table tr:nth-child(even) {
 /* Botones y links */
 a, button {
     transition: transform 0.3s, box-shadow 0.3s;
+    color: #eeff07;
 }
 
 a:hover, button:hover {
