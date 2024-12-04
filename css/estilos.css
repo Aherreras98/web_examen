@@ -152,6 +152,16 @@ body {
     animation: backgroundMove 15s linear infinite;
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #1b1b2f, #162447);
+    color: #eaeaea;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
 /* Formularios interactivos */
 form input, form textarea, form select {
     background-color: #162447;
