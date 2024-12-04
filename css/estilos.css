@@ -1,0 +1,177 @@
+/* styles.css */
+
+/* Estilo global */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Estilo retro gaming */
+body {
+    font-family: 'Press Start 2P', monospace;
+    background: linear-gradient(to bottom, #1a1a2e, #0f3460);
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #162447, #1b1b2f);
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .logo img {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #e43f5a;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    background-color: rgba(31, 64, 104, 0.9);
+    border-radius: 10px;
+    margin: 20px;
+    color: #eaeaea;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #1b1b2f;
+    color: #eaeaea;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #e43f5a;
+    }
+    to {
+        box-shadow: 0 0 20px #e43f5a;
+    }
+}
+
+table th, table td {
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #e43f5a;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #162447;
+}
+
+/* Botones y links */
+a, button {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a:hover, button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Efectos para imágenes */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Animaciones de fondo */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+body {
+    background-size: 200% 200%;
+    animation: backgroundMove 15s linear infinite;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #1b1b2f, #162447);
+    color: #eaeaea;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Formularios interactivos */
+form input, form textarea, form select {
+    background-color: #162447;
+    border: 1px solid #eaeaea;
+    color: #eaeaea;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #e43f5a;
+    transform: scale(1.02);
+}
