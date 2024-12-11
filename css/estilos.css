@@ -202,3 +202,37 @@ form input:focus, form textarea:focus, form select:focus {
     line-height: 1.4;
     text-align: justify;
 }
+
+/* Texto centrado para los títulos y enlaces externos */
+h1, h2, h3 {
+    text-align: center;
+}
+
+#enlaces ul {
+    text-align: center;
+}
+
+#enlaces ul li {
+    display: inline-block;
+}
+
+#enlaces ul li a {
+    display: block;
+    text-align: center;
+}
+
+/* Clip de vídeo */
+.video-container {
+    text-align: center;
+}
+
+.video-container video {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Gif inicial y final de la página de reseñas */
+#perro, #ichiban{
+    margin: 0 auto;
+    display: block;
+}
