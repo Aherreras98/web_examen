@@ -1,5 +1,6 @@
 /* Estilo de la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: 'Press Start 2P', monospace;
     background: linear-gradient(to bottom, #1a1a2e, #0f3460);
@@ -52,7 +53,8 @@ nav ul li a {
     transition: background-color 0.7s;
 }
 
-nav ul li a.active, nav ul li a:hover {
+nav ul li a.active,
+nav ul li a:hover {
     background-color: #e43f5a;
     color: #fff;
     transform: scale(1.1);
@@ -73,6 +75,7 @@ main {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -93,12 +96,14 @@ table {
     from {
         box-shadow: 0 0 10px #e43f5a;
     }
+
     to {
         box-shadow: 0 0 20px #e43f5a;
     }
 }
 
-table th, table td {
+table th,
+table td {
     border: 1px solid #eaeaea;
     padding: 10px;
     text-align: left;
@@ -114,12 +119,14 @@ table tr:nth-child(even) {
 }
 
 /* Botones y links */
-a, button {
+a,
+button {
     transition: transform 0.3s, box-shadow 0.3s;
     color: #eeff07;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
 }
@@ -155,17 +162,21 @@ form {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px #0000001a;
-    text-align: right; 
+    text-align: right;
 }
 
-form input, form textarea, form select {
+form input,
+form textarea,
+form select {
     background-color: #162447;
     border: 1px solid #fdfdfd;
     color: #eeeeee;
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-form input:focus, form textarea:focus, form select:focus {
+form input:focus,
+form textarea:focus,
+form select:focus {
     outline: none;
     box-shadow: 0 0 10px #8ff806;
     transform: scale(1.1);
@@ -214,8 +225,10 @@ form input:focus, form textarea:focus, form select:focus {
     text-align: justify;
 }
 
-/* Texto centrado para los títulos y enlaces externos */
-h1, h2, h3 {
+/* Texto centrado de títulos y listas*/
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
@@ -243,8 +256,8 @@ h1, h2, h3 {
 }
 
 /* Gif inicial y final de la página de reseñas */
-#perro, #ichiban{
+#perro,
+#ichiban {
     margin: 0 auto;
     display: block;
 }
-
