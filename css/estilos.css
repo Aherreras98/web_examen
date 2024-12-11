@@ -148,6 +148,16 @@ footer {
 }
 
 /* Formulario */
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+    text-align: right; 
+}
+
 form input, form textarea, form select {
     background-color: #162447;
     border: 1px solid #fdfdfd;
@@ -160,6 +170,7 @@ form input:focus, form textarea:focus, form select:focus {
     box-shadow: 0 0 10px #8ff806;
     transform: scale(1.1);
 }
+
 
 /* Estilos para el apartado de reseñas */
 #reseñas h3 {
@@ -236,3 +247,4 @@ h1, h2, h3 {
     margin: 0 auto;
     display: block;
 }
+
